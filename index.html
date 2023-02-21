@@ -52,5 +52,13 @@
       type="module"
       src="/src/pages/home-page/scripts/home-page.js"
     ></script>
+    <script>
+      const button = document.querySelector(".submit-btn");
+      console.log(button);
+
+      button.addEventListener("click", () => {
+        button.textContent = "w trakcie ladowania";
+      });
+    </script>
   </body>
 </html>
