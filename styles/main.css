@@ -1,0 +1,169 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #680262;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.card-box {
+  border-radius: 16px;
+  background-color: white;
+  width: 350px;
+  overflow: hidden;
+}
+.card-box h1 {
+  text-align: center;
+  color: #151827;
+  font-family: "Manrope", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  letter-spacing: 0%;
+}
+.card-box p {
+  text-align: center;
+  color: #85859b;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: medium;
+  line-height: 1rem;
+  letter-spacing: 0%;
+}
+
+.descripton-box {
+  padding: 0 25px;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-buttons a {
+  padding: 15px 0;
+  border: none;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #680262;
+  color: white;
+  text-decoration: none;
+  margin-top: 25px;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rempx;
+  font-weight: bold;
+  line-height: 160%;
+  letter-spacing: -1%;
+}
+.submit-btn:hover {
+  background-color: #490245;
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: #490245;
+  text-decoration: none;
+  margin: 10px 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 160%;
+  letter-spacing: -1%;
+}
+.cancel-btn:hover {
+  text-decoration: underline;
+}
+
+.prize-box {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f8f9fe;
+  border-radius: 16px;
+  margin-top: 30px;
+  padding: 0 20px 0 10px;
+}
+.prize-box .icon {
+  position: relative;
+  width: 100px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prize-box .icon img {
+  width: 2rem;
+}
+.prize-box .icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  border-right: 1px solid #cfd1dd;
+  height: 60%;
+}
+.prize-box span {
+  color: #85859b;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.875rem;
+  font-weight: medium;
+  line-height: 14px;
+  letter-spacing: -1%;
+}
+.prize-box h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: -1%;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 450px) {
+  .card-box {
+    width: 300px;
+  }
+  html {
+    font-size: 12px;
+  }
+  .icon img {
+    width: 1.5rem;
+  }
+}
+@media (max-height: 600px) {
+  .card-box {
+    width: 300px;
+  }
+  html {
+    font-size: 12px;
+  }
+  .icon img {
+    width: 1.5rem;
+  }
+}
+@media (max-width: 350px) {
+  .card-box {
+    width: 250px;
+  }
+  html {
+    font-size: 10px;
+  }
+  .prize-box .icon {
+    width: 70px;
+  }
+}/*# sourceMappingURL=main.css.map */
